@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
+</head>
+<body>
+    <div class="pokedex">
+        <div class="imgcontainer">
+             <img id="img2" src="images/baixados.jpg">
+             <img src="" id="img1">
+        </div>
+        <div class="btns">
+          <div class="btn1" onclick="voltar()"><img  src="images/setae.png" class="icon1"></div>
+          <h2 id="titulo"></h2>
+          <div class="btn1"><img onclick="avancar()" src="images/setad.png" class="icon1"></div>
+        </div>
+
+    </div>
+    <div class="des"></div>
+    <script>
+        var image  = document.getElementById("img1")
+        
+        const nomes = ["nome",]
+        const imagens = ["images/poke/1.gif","images/poke/2.gif","images/poke/3.gif","images/poke/4.gif","images/poke/5.gif","images/poke/6.gif","images/poke/7.gif","images/poke/8.gif","images/poke/9.gif","images/poke/10.gif","images/poke/11.gif","images/poke/12.gif","images/poke/13.gif","images/poke/14.gif","images/poke/15.gif","images/poke/20.gif"]
+       let i = 0
+       var titulo = document.getElementById("titulo")
+        function avancar(){
+            let j = 0
+           
+           image.style.zIndex = "20"
+           image.src = imagens[i]
+          
+        i = i + 1
+
+        }
+        function voltar(){
+            i = i -1
+            image.src = imagens[i]
+          
+            
+            
+            
+        }
+    </script>
+</body>
+</html>
